@@ -15,7 +15,7 @@ Etant donné que les données obtenues sont des données des capteurs enregistr�
 ##  Resultats
  Les résultats sont présentés dans le dossier `Images/`:
 
- - ![Distribution du nombre de vehicules par type de jonction](D:\DOCUMENTS\PROJETS\Estimation-du-traffic-routier---ATUT2025\Images\Distribution du nombre de vehicules par type de jonction.png)
+ - ![Distribution du nombre de vehicules par type de jonction](https://github.com/Katchoou/Estimation-du-traffic-routier---ATUT2025/blob/09a970488978c7d4a0ecf22e39cec14a993f0c28/Images/Distribution%20du%20nombre%20de%20vehicules%20par%20type%20de%20jonction.png)
  Ce fichier présente la distribution (histogramme) du nombre de véhicules par type de jonction.
 
  - ![Evolution de la fonction de perte du modèle LSTM](D:\DOCUMENTS\PROJETS\Estimation-du-traffic-routier---ATUT2025\Images\Evolution de la fonction de perte du modèle LSTM.png)

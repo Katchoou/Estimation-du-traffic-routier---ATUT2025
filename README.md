@@ -1,15 +1,19 @@
-#  Optimisation des réseaux de services publics au Togo
+#  Estimation du traffic routier
 
-##  Contexte
-Ce projet a été réalisé dans le cadre du **test pratique pour le recrutement des stagiaires data analysts chez Togo DataLab**.  
+##  Objectifs
+
+L’objectif de ce projet est de mettre en place un modele de machine learning pour estimer l’évolution du trafic routier dans chaque jonction d’un carrefour étant donné que la pression sur les infrastructures des villes ne fait qu’augmenter d’année en année. Dans ce projet nous considérons les données obtenues des capteurs dans un carrefour constitué de 4 jonctions pour la modélisation.  
 
 ---
 
-##  Objectifs
-- Explorer et nettoyer les données disponibles.  
-- Mettre en œuvre des techniques d’analyse statistique et de traitement de données.  
-- Identifier des pistes d’optimisation pour améliorer l’efficacité des services publics.  
-- Présenter les résultats sous forme de visualisations et de tableaux de bord interactifs.  
+##  Methode
+
+Etant donné que les données obtenues sont des données des capteurs enregistrés par heures à chaque jonction, nous avons choisi comme deux types de modèles notamment les Long Short Term Memory (LSTM) et les Gated Recurrent Unit (GRU) qui sont une option simplifiée des modèles LSTM. 
+
+---
+
+##  Resultats
+ 
 
 ---
 
@@ -25,10 +29,3 @@ Ce projet a été réalisé dans le cadre du **test pratique pour le recrutement
 
 ---
 
-##  Prérequis
-Avant d’exécuter le notebook, assurez-vous d’avoir installé :  
-- Python 3.8+  
-- Jupyter Notebook ou JupyterLab  
-- Librairies nécessaires :  
-  ```bash
-  pip install pandas numpy matplotlib seaborn scikit-learn

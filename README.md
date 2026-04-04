@@ -1,4 +1,4 @@
-#  Estimation du trafic routier
+#  Estimation du trafic routier --Smart City Project
 
 ##  Objectifs
 
@@ -56,7 +56,8 @@ Etant donné que les données obtenues sont des données des capteurs enregistr�
 
 ##  Limites
 
-- Quelques limites sont à relever dans ce projet. Premièrement, les variables météorologiques n'ont pas été intégrées, faute de sources accessibles, bien que c'est naturel de savoir que le l'évolution du trafic routier y est étroitement liée. Ensuite, la simplicité des modèles actuels s'explique par les contraintes techniques, parce que les modèles ont été entrainés en local. 
+- Quelques limites sont à relever dans ce projet. Premièrement, les variables météorologiques n'ont pas été intégrées, faute de sources accessibles, bien que c'est naturel de savoir que l'évolution du trafic routier y est étroitement liée. Ensuite, la simplicité des modèles actuels s'explique par les contraintes techniques, parce que les modèles ont été entrainés en local. 
 
-- Une amélioration du projets pourrait consister à utiliser les données pays, intégrer les données météorologiques et aussi augmenter les capacités de calcul supérieurs en utilisants par exemple les GPU de kaggle ou bien Colab.
+- Une amélioration du projet pourrait consister à utiliser les données pays, intégrer les données météorologiques et aussi augmenter les capacités de calcul supérieurs en utilisants par exemple les GPUs de kaggle ou bien Colab.
+
 ---

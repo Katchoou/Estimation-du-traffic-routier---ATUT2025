@@ -2,40 +2,40 @@
 
 ##  Objectifs
 
-L’objectif de ce projet est de mettre en place un modele de machine learning pour estimer l’évolution du trafic routier dans chaque jonction d’un carrefour étant donné que la pression sur les infrastructures des villes ne fait qu’augmenter d’année en année. Dans ce projet nous considérons les données obtenues des capteurs dans un carrefour constitué de 4 jonctions pour la modélisation.  
+L’objectif de ce projet est de mettre en place un modèle de machine learning pour estimer l’évolution du trafic routier dans chaque jonction d’un carrefour étant donné que la pression sur les infrastructures des villes ne fait qu’augmenter d’année en année. Dans ce projet nous considérons les données obtenues des capteurs dans un carrefour constitué de 4 jonctions pour la modélisation.  
 
 ---
 
 ##  Methode
 
-Etant donné que les données obtenues sont des données des capteurs enregistrés par heures à chaque jonction, nous avons choisi deux types de modèles, notamment les Long Short Term Memory (LSTM) et les Gated Recurrent Unit (GRU) qui sont une option simplifiée des modèles LSTM. Notre modelisation se focalise sur la jonction 1. Pour modeliser le trafic dans les autres jonctions il suffit de changer seulement deux variable dans le notebook. La premiere est le type de jonction (*type_jonction*) et la variable *interval* dans la fonction *Difference*. En effet, cette fonction est utiliser afin d'extraire l'effet de la saisaonalité. Donc cette variable devrait etre adapté en fonction de la nature des données pour chaque jonction. 
+Etant donné que les données obtenues sont des données des capteurs enregistrés par heures à chaque jonction, nous avons choisi deux types de modèles, notamment les Long Short Term Memory (LSTM) et les Gated Recurrent Unit (GRU) qui sont une option simplifiée des modèles LSTM. Notre modelisation se focalise sur la jonction 1. Pour modeliser le trafic dans les autres jonctions il suffit de changer seulement deux variable dans le notebook. La première est le type de jonction (*type_jonction*) et la variable *interval* dans la fonction *Difference*. En effet, cette fonction est utilisée afin d'extraire l'effet de la saisonnalité. Donc cette variable devrait etre adaptée en fonction de la nature des données pour chaque jonction. 
 
 ---
 
 ##  Resultats
  Les résultats sont présentés dans le dossier `Images/`:
 
- - ![Distribution du nombre de vehicules par type de jonction](https://github.com/Katchoou/Estimation-du-traffic-routier---ATUT2025/blob/09a970488978c7d4a0ecf22e39cec14a993f0c28/Images/Distribution%20du%20nombre%20de%20vehicules%20par%20type%20de%20jonction.png)
+ ![Distribution du nombre de vehicules par type de jonction](https://github.com/Katchoou/Estimation-du-traffic-routier---ATUT2025/blob/09a970488978c7d4a0ecf22e39cec14a993f0c28/Images/Distribution%20du%20nombre%20de%20vehicules%20par%20type%20de%20jonction.png)
  
- Ce fichier présente la distribution (histogramme) du nombre de véhicules par type de jonction.
+ - Ce fichier présente la distribution (histogramme) du nombre de véhicules par type de jonction.
 
- - ![Evolution de la fonction de perte du modèle LSTM](https://github.com/Katchoou/Estimation-du-traffic-routier---ATUT2025/blob/6a079b5cc34cc8f5c7e3a19ad1e5f26000eb2a79/Images/Evolution%20de%20la%20fonction%20de%20perte%20du%20mod%C3%A8le%20LSTM.png)
+ ![Evolution de la fonction de perte du modèle LSTM](https://github.com/Katchoou/Estimation-du-traffic-routier---ATUT2025/blob/6a079b5cc34cc8f5c7e3a19ad1e5f26000eb2a79/Images/Evolution%20de%20la%20fonction%20de%20perte%20du%20mod%C3%A8le%20LSTM.png)
  
- Cette image illustre l'évolution de la fonction de perte du modèle LSTM sur les données d'entrainement et de test.
+ - Cette image illustre l'évolution de la fonction de perte du modèle LSTM sur les données d'entrainement et de test.
 
-  - ![Evolution de la fonction de perte du modèle GRU](https://github.com/Katchoou/Estimation-du-traffic-routier---ATUT2025/blob/6a079b5cc34cc8f5c7e3a19ad1e5f26000eb2a79/Images/Evolution%20de%20la%20fonction%20de%20perte%20du%20mod%C3%A8le%20GRU.png)
+![Evolution de la fonction de perte du modèle GRU](https://github.com/Katchoou/Estimation-du-traffic-routier---ATUT2025/blob/6a079b5cc34cc8f5c7e3a19ad1e5f26000eb2a79/Images/Evolution%20de%20la%20fonction%20de%20perte%20du%20mod%C3%A8le%20GRU.png)
  
- Cette image illustre l'évolution de la fonction de perte du modèle GRU sur les données d'entrainement et de test.
+- Cette image illustre l'évolution de la fonction de perte du modèle GRU sur les données d'entrainement et de test.
 
-  - ![Valeurs prédites par le modèle LSTM](https://github.com/Katchoou/Estimation-du-traffic-routier---ATUT2025/blob/6a079b5cc34cc8f5c7e3a19ad1e5f26000eb2a79/Images/Valeurs%20pr%C3%A9dites%20par%20le%20mod%C3%A8le%20LSTM.png)
+![Valeurs prédites par le modèle LSTM](https://github.com/Katchoou/Estimation-du-traffic-routier---ATUT2025/blob/6a079b5cc34cc8f5c7e3a19ad1e5f26000eb2a79/Images/Valeurs%20pr%C3%A9dites%20par%20le%20mod%C3%A8le%20LSTM.png)
  
- Cet graphique montre l'évolution des prédictions du modèle LSTM ainsi que les valeurs réelles du trafic routier.
+- Cet graphique montre l'évolution des prédictions du modèle LSTM ainsi que les valeurs réelles du trafic routier.
 
-   - ![Valeurs prédites par le modèle GRU](https://github.com/Katchoou/Estimation-du-traffic-routier---ATUT2025/blob/6a079b5cc34cc8f5c7e3a19ad1e5f26000eb2a79/Images/Valeurs%20pr%C3%A9dites%20par%20le%20mod%C3%A8le%20GRU.png)
+![Valeurs prédites par le modèle GRU](https://github.com/Katchoou/Estimation-du-traffic-routier---ATUT2025/blob/6a079b5cc34cc8f5c7e3a19ad1e5f26000eb2a79/Images/Valeurs%20pr%C3%A9dites%20par%20le%20mod%C3%A8le%20GRU.png)
  
- Cet graphique montre l'évolution des prédictions du modèle GRU ainsi que les valeurs réelles du trafic routier.
+- Cet graphique montre l'évolution des prédictions du modèle GRU ainsi que les valeurs réelles du trafic routier.
 
-Les résultats sont présentés dans les différents graphique y joins à ce notebook. Ils indiquent plutôt de bonnes performances dans la modélisation de nos données et la prédiction.
+- Les résultats sont présentés dans les différents graphique y joins à ce notebook. Ils indiquent plutôt de bonnes performances dans la modélisation de nos données et la prédiction.
 ---
 
 ## 📂 Contenu du repository
@@ -56,7 +56,7 @@ Les résultats sont présentés dans les différents graphique y joins à ce not
 
 ##  Limites
 
-Quelques limites sont à relever dans ce projet. Premièrement, les variables météorologiques n'ont pas été intégrées, faute de sources accessibles, bien que c'est naturel de savoir que le l'évolution du trafic routier y est étroitement liée. Ensuite, la simplicité des modèles actuels s'explique par les contraintes techniques, parce que les modèles ont été entrainés en local. 
+- Quelques limites sont à relever dans ce projet. Premièrement, les variables météorologiques n'ont pas été intégrées, faute de sources accessibles, bien que c'est naturel de savoir que le l'évolution du trafic routier y est étroitement liée. Ensuite, la simplicité des modèles actuels s'explique par les contraintes techniques, parce que les modèles ont été entrainés en local. 
 
-Une amélioration du projets pourrait consister à utiliser les données pays, intégrer les données météorologiques et aussi augmenter les capacités de calcul supérieurs en utilisants par exemple les GPU de kaggle ou bien Colab.
+- Une amélioration du projets pourrait consister à utiliser les données pays, intégrer les données météorologiques et aussi augmenter les capacités de calcul supérieurs en utilisants par exemple les GPU de kaggle ou bien Colab.
 ---

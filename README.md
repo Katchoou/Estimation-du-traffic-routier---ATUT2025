@@ -18,16 +18,16 @@ Etant donné que les données obtenues sont des données des capteurs enregistr�
  - ![Distribution du nombre de vehicules par type de jonction](https://github.com/Katchoou/Estimation-du-traffic-routier---ATUT2025/blob/09a970488978c7d4a0ecf22e39cec14a993f0c28/Images/Distribution%20du%20nombre%20de%20vehicules%20par%20type%20de%20jonction.png)
  Ce fichier présente la distribution (histogramme) du nombre de véhicules par type de jonction.
 
- - ![Evolution de la fonction de perte du modèle LSTM](D:\DOCUMENTS\PROJETS\Estimation-du-traffic-routier---ATUT2025\Images\Evolution de la fonction de perte du modèle LSTM.png)
+ - ![Evolution de la fonction de perte du modèle LSTM](https://github.com/Katchoou/Estimation-du-traffic-routier---ATUT2025/blob/6a079b5cc34cc8f5c7e3a19ad1e5f26000eb2a79/Images/Evolution%20de%20la%20fonction%20de%20perte%20du%20mod%C3%A8le%20LSTM.png)
  Cette image illustre l'évolution de la fonction de perte du modèle LSTM sur les données d'entrainement et de test.
 
-  - ![Evolution de la fonction de perte du modèle GRU](D:\DOCUMENTS\PROJETS\Estimation-du-traffic-routier---ATUT2025\Images\Evolution de la fonction de perte du modèle GRU.png)
+  - ![Evolution de la fonction de perte du modèle GRU](https://github.com/Katchoou/Estimation-du-traffic-routier---ATUT2025/blob/6a079b5cc34cc8f5c7e3a19ad1e5f26000eb2a79/Images/Evolution%20de%20la%20fonction%20de%20perte%20du%20mod%C3%A8le%20GRU.png)
  Cette image illustre l'évolution de la fonction de perte du modèle GRU sur les données d'entrainement et de test.
 
-  - ![Valeurs prédites par le modèle LSTM](D:\DOCUMENTS\PROJETS\Estimation-du-traffic-routier---ATUT2025\Images\Valeurs prédites par le modèle LSTM.png)
+  - ![Valeurs prédites par le modèle LSTM](https://github.com/Katchoou/Estimation-du-traffic-routier---ATUT2025/blob/6a079b5cc34cc8f5c7e3a19ad1e5f26000eb2a79/Images/Valeurs%20pr%C3%A9dites%20par%20le%20mod%C3%A8le%20LSTM.png)
  Cet graphique montre l'évolution des prédictions du modèle LSTM ainsi que les valeurs réelles du trafic routier.
 
-   - ![Valeurs prédites par le modèle GRU](D:\DOCUMENTS\PROJETS\Estimation-du-traffic-routier---ATUT2025\Images\Valeurs prédites par le modèle GRU.png)
+   - ![Valeurs prédites par le modèle GRU](https://github.com/Katchoou/Estimation-du-traffic-routier---ATUT2025/blob/6a079b5cc34cc8f5c7e3a19ad1e5f26000eb2a79/Images/Valeurs%20pr%C3%A9dites%20par%20le%20mod%C3%A8le%20GRU.png)
  Cet graphique montre l'évolution des prédictions du modèle GRU ainsi que les valeurs réelles du trafic routier.
 
 Les résultats sont présentés dans les différents graphique y joins à ce notebook. Ils indiquent plutôt de bonnes performances dans la modélisation de nos données et la prédiction.

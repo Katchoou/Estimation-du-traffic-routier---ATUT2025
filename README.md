@@ -8,7 +8,7 @@ L’objectif de ce projet est de mettre en place un modele de machine learning p
 
 ##  Methode
 
-Etant donné que les données obtenues sont des données des capteurs enregistrés par heures à chaque jonction, nous avons choisi deux types de modèles notamment les Long Short Term Memory (LSTM) et les Gated Recurrent Unit (GRU) qui sont une option simplifiée des modèles LSTM. Notre modelisation se focalise sur la jonction 1. Pour modeliser le trafic dans les autres jonctions il suffit de changer seulement deux variable dans le notebook. La premiere est le type de jonction (*type_jonction*) et la variable *interval* dans la fonction *Difference*. En efft cette fonction est utiliser afin d'extraire l'effet de la saiaonalité. Donc cette variable devrait etre adapté en fonction de la nature des données. 
+Etant donné que les données obtenues sont des données des capteurs enregistrés par heures à chaque jonction, nous avons choisi deux types de modèles notamment les Long Short Term Memory (LSTM) et les Gated Recurrent Unit (GRU) qui sont une option simplifiée des modèles LSTM. Notre modelisation se focalise sur la jonction 1. Pour modeliser le trafic dans les autres jonctions il suffit de changer seulement deux variable dans le notebook. La premiere est le type de jonction (*type_jonction*) et la variable *interval* dans la fonction *Difference*. En effet, cette fonction est utiliser afin d'extraire l'effet de la saisaonalité. Donc cette variable devrait etre adapté en fonction de la nature des données pour chaque jonction. 
 
 ---
 
@@ -16,7 +16,7 @@ Etant donné que les données obtenues sont des données des capteurs enregistr�
  Les résultats sont présentés dans le dossier `Images/`:
 
  - ![Distribution du nombre de vehicules par type de jonction](D:\DOCUMENTS\PROJETS\Estimation-du-traffic-routier---ATUT2025\Images\Distribution du nombre de vehicules par type de jonction.png)
- Ce fichier présente la distribution (histogramme) du nombre de véhicules par type de jonction
+ Ce fichier présente la distribution (histogramme) du nombre de véhicules par type de jonction.
 
  - ![Evolution de la fonction de perte du modèle LSTM](D:\DOCUMENTS\PROJETS\Estimation-du-traffic-routier---ATUT2025\Images\Evolution de la fonction de perte du modèle LSTM.png)
  Cette image illustre l'évolution de la fonction de perte du modèle LSTM sur les données d'entrainement et de test.
@@ -34,16 +34,18 @@ Les résultats sont présentés dans les différents graphique y joins à ce not
 ---
 
 ## 📂 Contenu du repository
-- **notebook.ipynb** : `Estimation-du-traffic-routier---ATUT2025` –ensemble des étapes liées à au dévéloppement des modèles.  
-- **data** : `dossier qui contient les données utlisées pour la modélisation`.   
-- **README.md** : `Le fichier readme qui contient l'ensemble des informations sur le projet`.  
-- **gitignore** : `Un fichier qui permet d'ignorer certains fichiers non important pour le cloning/` .    
-- **Images** : 'Dossiers qui contient le images sur les résultats de nos modélisations.
+
+- **notebook.ipynb** : Regroupe l'ensemble des étapes de développement des modèles.
+- **data** : Dossier contenant les jeux de données utilisés pour la modélisation.
+- **README.md** : Documentation principale présentant les informations essentielles du projet.
+- **gitignore** : Fichier spécifiant les éléments à exclure lors du clonage ou du versionnement.
+- **Images** : Dossier stockant les visualisations des résultats de modélisation.
+- **Requirements.txt** :: Liste des dépendances nécessaires pour reproduire l'environnement du projet. Il est recommandé d'utiliser un environnement virtuel avant l'installation. 
 
 ---
 
 ##  Limites
 
-En guise de limite on note que les données ne sont pas adaptées au contexte du Togo car les données dans le cas de ce pays n’existent pas. Une autre limite est la non prise en compte des données météorologique. En effet, les données météo correspondant ne sont pas trouvable. Une future amélioration pourrait être de tenir en compte ces données pour améliorer les performances des modèles car il est naturel que l’évolution du trafic routier soit liée à l’état de la météo. Par ailleurs il est à noter que la simplicité du modèle est liée au fait que son entrainement a été fait en local.  
-
+Plusieurs limites sont à relever dans cet projet. Premièrement, les données utilisées ne sont pas spécifiquement adaptées au contexte du Togo, en raison de l'indisponibilité de données locales. Deuxièmement, les variables météorologiques n'ont pas été intégrées, faute de sources accessibles, bien que l'évolution du trafic routier y soit étroitement liée.
+Enfin, la simplicité du modèle actuel s'explique par les contraintes techniques d'un entraînement réalisé en local. Une amélioration future consisterait à intégrer des données climatiques et à exploiter des capacités de calcul supérieures pour affiner les performances des modèles.
 ---
